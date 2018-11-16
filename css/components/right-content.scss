@@ -1,0 +1,102 @@
+/*  left-content css  */
+.c-right {
+    float: right;
+    position: relative;
+    background-image: url('../image/r-content-background.svg');
+    background-position: bottom left;
+}
+
+.container-inner-right {
+    width: 480px;
+    margin-left: 0;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+
+    @media only screen and (max-width: 480px) {
+        width: 80%;
+    }
+
+    p {
+        color: $cor-cinza-padrao;
+        font-family: $font-padrao;
+        font-size: 2.49em;
+        font-weight: 700;
+        margin: 14px;
+
+        &:nth-child(2) {
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+        &:nth-child(3){
+            font-size: .92em;
+            font-weight: 300;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+    }
+    
+}
+
+input[type="text"] {
+    width: 87%;
+    border-radius: 50px;
+    height: 2.8em;
+    border: $borda-padrao;
+    color: $cor-cinza-padrao;
+    padding-left: 22px;
+    @include font-form;
+}
+
+input[type="submit"]{
+    border-radius: 50px;
+    height: 3em;
+    margin-top: 2.3em;
+    padding: 0em 2.3em;
+    border: $borda-padrao;
+    background-color: $cor-botao;
+    color: $cor-branca;
+    @include font-form;
+}
+
+/* Placeholder field */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    @include placeholder;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    @include placeholder;
+};
+
+
+
+@keyframes animateRocket {
+    from {
+        margin-top: 72vh;
+    }
+    to {
+        margin-top: -25vh;
+    }
+}
+
+.animate-rocket {
+    background-image: url('../image/rocket.svg');
+    background-repeat: no-repeat;
+    position: relative;
+    height: 150px;
+    max-width: 100px;
+    margin: 2.3em auto;
+    display: block;
+    margin-top: 72vh;
+    animation: animateRocket 1.6s;
+    -webkit-animation: animateRocket 1.6s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+

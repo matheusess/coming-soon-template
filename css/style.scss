@@ -1,0 +1,15 @@
+//# SASS file to import files
+//#######################################
+
+// #font;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,500,500i,700');
+
+// #reset file.
+@import 'base/normalize';
+@import 'helpers/mixin';
+@import 'helpers/variaveis';
+
+// #components import.
+@import 'components/general';
+@import 'components/left-content';
+@import 'components/right-content';

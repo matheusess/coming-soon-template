@@ -1,0 +1,40 @@
+/* Variables to scss*/
+
+@mixin mixin-content {
+    width: 50%;
+    height: 100vh;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+@mixin mixin-container {
+    width: 520px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 480px) {
+        width: 80%;
+    }
+}
+
+@mixin fonte-destaque {
+    font-family: $font-padrao;
+    color: $cor-branca;
+    font-weight: 500;
+    font-size: $font-tamanho-padrao;
+}
+
+@mixin font-form {
+    font-family: $font-padrao;
+    font-size: $font-field;
+}
+
+@mixin placeholder {
+    color: $cor-font-placeholder;
+    font-size: $font-placeholder;
+    font-family: $font-padrao;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: .7px;
+}

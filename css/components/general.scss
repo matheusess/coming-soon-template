@@ -1,0 +1,8 @@
+/*  general content  */
+.content {
+    @include mixin-content;
+}
+
+.container {
+    @include mixin-container;
+}
